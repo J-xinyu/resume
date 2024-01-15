@@ -1,0 +1,118 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{吉新宇}
+
+\basicInfo{
+  \email{jixinyu666@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 155-9281-6678} \textperiodcentered\ 
+}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{清华大学}}{2023 -- 至今}
+\textit{联合培养硕士研究生}\ 智能网联车, 预计 2026 年 3 月毕业
+\datedsubsection{\textbf{陕西理工大学}}{2023 -- 至今}
+\textit{硕士研究生}\ 智能网联车, 预计 2026 年 3 月毕业
+\datedsubsection{\textbf{陕西理工大学}}{2019 -- 2023}
+\textit{学士}\ 车辆工程
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{清华大学}}{2022年5月 -- 至今}
+\role{实习}{导师: 张新钰\ 赵建辉\ 赵虚左}
+机器人与无人驾驶实习生
+\begin{itemize}
+  \item 使用ROS2从0搭建一辆自主导航小车
+  \item 使用Moveit2驱动机械臂
+  \item 部署Autoware.Universe自动驾驶框架到实车上
+  \item 使用ROS2结合Tensorrt和CUDA以及ONNX去部署yolov5,yolox,unet,ufldv2等算法
+  \item 调研学习bevfusion算法及其部署，写教程文档
+\end{itemize}
+
+\datedsubsection{\textbf{航天三院}}{2021年5月 -- 2021年11月}
+\role{实习}{导师: 苏沛东\ 余涛}
+校园特使
+\begin{itemize}
+  \item 在校内做ROS, OpenCV, 深度学习, 机器学习, QT, SLAM等相关培训
+  \item 辅助开发赛事流程及内容
+\end{itemize}
+
+\datedsubsection{\textbf{阿克曼无人车系统设计}}{2021年1月 -- 2021年8月}
+\role{C/C++, Linux, Python}{个人项目}
+\begin{onehalfspacing}
+基于ROS1和阿克曼底盘搭建一辆无人驾驶车
+\begin{itemize}
+  \item 使用传统方法和目标检测方法实现红绿灯识别
+  \item 使用Unet实现车道线分割
+  \item 使用Socket实现图像的传输
+  \item 使用相机模型实现单目测距
+  \item 使用Tensorrt和DeepStream实现模型的部署
+  \item 使用Navigation框架实现小车的自动导航及避障
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{多车协同}}{2022 年1月 -- 2022年4月}
+\role{Gazebo, URDF, ROS}{个人项目}
+\begin{onehalfspacing}
+基于ROS和Gazebo仿真的多车协同控制
+\begin{itemize}
+  \item 使用Gazebo仿真环境搭建多个移动机器人的描述模型
+  \item 使用Leader-Follower算法实现多个移动机器人的编队控制
+  \item 支持 FontAwesome 4.5.0
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{自主泊车}}{2022 年4月 -- 2022年6月}
+\role{C++, XML, LGSVL}{个人项目}
+\begin{onehalfspacing}
+LGSVL模拟器中实现基于Autoware.auto的AVP自主泊车算法
+\begin{itemize}
+  \item 使用ROS2搭建的无人驾驶软件
+  \item 使用LGSVL搭建的环境仿真和车辆仿真
+  \item 使用Autoware.auto提供的AVP算法实现自主泊车
+\end{itemize}
+\end{onehalfspacing}
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C++, Python, CUDA, XML, YAML
+  \item 平台: Ubuntu
+  \item 开发: ROS1/ROS2, Tensorrt, Autoware, Git
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedline{\textit{金奖},第三届中国智能网联汽车国际大会CIVC}{2023年7月}
+\datedline{\textit{国家二等奖},全国大学生智能车竞赛航天物流组}{2023年6月}
+\datedline{\textit{国家二等奖},全国大学生计算机设计大赛无人驾驶组}{2021年11月}
+\datedline{\textit{国家三等奖},全国大学生智能车竞赛航天物流组}{2021年6月}
+\datedline{\textit{省级二等奖},全国大学生智能车竞赛智慧餐厅组}{2021年6月}
+\datedline{\textit{省级二等奖},全国大学生智能车竞赛航天物流组}{2022年6月}
+
+
+\section{\faInfo\ 自我评价}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 从2019年起就开始学习无人驾驶相关的技术栈，冥冥之中感觉自己就是干这个的，但是自学路上走了很多歪路，好在让自己学会了该如何正确的去学习一门技术。但是对于产品量产落地相关的技术找不到学习渠道，因此产生强烈的欲望希望接触产品，参与制造年轻人的第一辆汽车。
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
